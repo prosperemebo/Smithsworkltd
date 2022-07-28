@@ -15,7 +15,6 @@ const Nav = () => {
   };
 
   const openNavHandler = (event) => {
-    console.log(classes.backdrop);
     if (event.target.matches(`.${classes.backdrop}`)) {
       return false;
     }

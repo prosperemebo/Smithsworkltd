@@ -61,15 +61,14 @@
 
   .features {
     .feature {
+      @include card;
       position: absolute;
       z-index: 10;
-      background-color: $color-white;
       border-radius: 20px;
       display: inline-block;
       display: flex;
       align-items: center;
       padding: 1rem;
-      box-shadow: 0px 25px 30px rgba($color-secondary, 0.1);
 
       img {
         width: 5rem;
