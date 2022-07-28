@@ -1,0 +1,26 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Industries {
+  background-color: $color-secondary;
+  color: $color-primary;
+  padding: 10rem 0 5rem;
+
+  h1,
+  h2 {
+    color: $color-primary;
+  }
+
+  .sections {
+    width: calc(100vw - 40rem);
+    margin: 5rem auto;
+
+    @include respond(tab-port) {
+      width: calc(100vw - 20rem);
+    }
+
+    @include respond(phone) {
+      width: calc(100vw - 5rem);
+    }
+  }
+}

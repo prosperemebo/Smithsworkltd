@@ -1,0 +1,130 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Contact {
+  min-height: 90vh;
+  width: calc(100vw - 16rem);
+  padding: 20rem 0 8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-land) {
+    width: calc(100vw - 8rem);
+  }
+
+  @include respond(tab-port) {
+    padding: 15rem 0 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include respond(phone) {
+    width: calc(100vw - 4rem);
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .capsule {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 2.5rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .infoBody {
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
+
+    .info {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+
+        @include respond(tab-port) {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .cta {
+    flex: 1;
+    margin-bottom: 15rem;
+
+    @include respond(tab-port) {
+      align-self: stretch;
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: 2px solid $color-secondary;
+      margin-bottom: 4rem;
+      padding: 1rem 2rem 1rem 1rem;
+      font-size: 2rem;
+      font-family: $secondary-font;
+      border-radius: 5px;
+      transition: border 0.1s ease;
+
+      &:focus {
+        border: 2px solid $color-accent;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $color-grey-3;
+      }
+    }
+
+    textarea {
+      height: 25rem;
+    }
+
+    button {
+      align-self: flex-start;
+    }
+  }
+}

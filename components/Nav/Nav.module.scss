@@ -1,0 +1,220 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 10000;
+  transition: 0.5s ease;
+  transition-property: background-color, box-shadow, padding;
+
+  @include respond(tab-land) {
+    padding: 2rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 2rem;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &.navScrolled {
+    background-color: $color-white;
+    box-shadow: 0 10px 20px rgba($color-secondary, 0.1);
+    padding: 1rem 8rem;
+
+    @include respond(tab-land) {
+      padding: 1rem 2rem;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .logo {
+      img {
+        width: 8rem;
+      }
+    }
+  }
+
+  .logo {
+    flex: 1.5;
+
+    button {
+      display: none;
+    }
+
+    @include respond(tab-land) {
+      flex: 1;
+    }
+
+    @include respond(tab-port) {
+      flex: 0.8;
+    }
+
+    img {
+      width: 12rem;
+      cursor: pointer;
+      transition: width 0.2s ease;
+
+      @include respond(tab-port) {
+        width: 10rem;
+      }
+    }
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.2s ease, border 0.2s ease;
+        border-radius: 5px;
+        border: 1px solid transparent;
+
+        &:hover {
+          background-color: rgba($color-accent, 0.1);
+          border-color: $color-grey-2;
+        }
+      }
+    }
+  }
+
+  @include respond(phone) {
+    &.navScrolled,
+    &.navOpen {
+      .logo {
+        background-color: $color-white;
+        box-shadow: 0 10px 20px rgba($color-secondary, 0.1);
+        padding: 1rem 2rem;
+      }
+    }
+
+    .logo {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      z-index: 1;
+      transition: 0.5s ease;
+      transition-property: background-color, box-shadow, padding;
+
+      .navBtn {
+        display: block;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $color-accent;
+        padding: 0 !important;
+        position: relative;
+
+        span,
+        span::before,
+        span::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 70%;
+          background-color: $color-primary;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transform-origin: center;
+          transition: transform 0.2s ease, left 0.2s ease, top 0.2s ease;
+        }
+
+        span::before {
+          top: -8px;
+          width: 100%;
+        }
+
+        span::after {
+          width: 100%;
+          top: 10px;
+        }
+      }
+    }
+
+    .navList {
+      position: fixed;
+      top: 0;
+      left: -50%;
+      height: 100vh;
+      width: 0;
+      background-color: rgba($color-secondary, 0.7);
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 10rem;
+      padding-left: 2rem;
+      transform-origin: right;
+      transition: width 0.5s ease, left 0.5s ease;
+
+      li {
+        margin: 3rem 0;
+        a {
+          font-size: 3rem;
+        }
+      }
+
+      .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0vw;
+        background-color: $color-white;
+        z-index: -1;
+        transition: width 0.5s ease, left 0.5s ease;
+      }
+    }
+
+    &.navOpen {
+      .navList {
+        width: 100vw;
+        left: 0;
+      }
+
+      .backdrop {
+        width: 50vw;
+      }
+
+      .navBtn {
+        span {
+          background-color: transparent;
+        }
+
+        span::before {
+          top: 0px;
+          left: 0;
+          transform: rotate(135deg) translate(0%, 0%);
+        }
+
+        span::after {
+          top: 0px;
+          left: 0;
+          transform: rotate(-135deg) translate(0%, 0%);
+        }
+      }
+    }
+  }
+}

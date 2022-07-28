@@ -1,0 +1,27 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 8rem;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 2rem;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &-primary {
+    background-color: $color-accent;
+    color: $color-primary;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba($color-accent, 0.3);
+    }
+  }
+}

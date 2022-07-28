@@ -1,0 +1,46 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Dropdown {
+  padding: 2rem;
+  margin-bottom: 5rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 2rem;
+  }
+
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    h2 {
+      .pre {
+        color: $color-grey-2;
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+    }
+
+    .drop {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      img {
+        transition: transform 0.5s ease;
+
+        @include respond(tab-port) {
+          width: 3rem;
+        }
+      }
+
+      &.open {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

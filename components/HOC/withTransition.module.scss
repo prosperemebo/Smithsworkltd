@@ -1,0 +1,23 @@
+@import '../../styles/abstracts/variables';
+
+.slideIn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: $color-accent;
+  transform-origin: left;
+  z-index: 5000;
+}
+
+.slideOut {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: $color-accent;
+  transform-origin: right;
+  z-index: 5000;
+}
