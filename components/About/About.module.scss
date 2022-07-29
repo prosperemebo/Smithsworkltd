@@ -46,6 +46,21 @@
         width: 38rem;
         border-radius: 6rem;
         overflow: hidden;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-image: linear-gradient(
+            rgba($color-primary, 0.1),
+            rgba($color-primary, 0.1)
+          );
+        }
 
         @include respond(tab-port) {
           height: 38rem;
@@ -121,7 +136,7 @@
 
   .about {
     @include card;
-    width: calc((100vw - 12rem));
+    width: calc((100vw - 20rem));
     border-radius: 3rem;
     padding: 5rem;
     margin: 0 auto -10rem;
@@ -195,7 +210,6 @@
 
   .personnelContainer {
     padding: 10rem 0;
-    text-align: center;
 
     .personnels {
       display: flex;
@@ -203,19 +217,30 @@
       margin-top: 3.5rem;
 
       @include respond(tab-port) {
-        flex-direction: column;
-        align-items: center;
         padding: 0 2rem;
       }
+
+      // @include respond(tab-port) {
+      //   flex-direction: column;
+      //   align-items: center;
+      //   padding: 0 2rem;
+      // }
 
       .personnel {
         @include card;
         border-radius: 3rem;
-        width: 50rem;
-        padding: 3rem;
+        width: calc((100vw - 20rem));
+        min-height: 40rem;
+        // padding: 3rem;
+        display: flex;
+        overflow: hidden;
+
+        @include respond(tab-port) {
+          width: 100%;
+        }
 
         @include respond(phone) {
-          width: 100%;
+          flex-direction: column;
         }
 
         &:not(:last-child) {
@@ -231,9 +256,23 @@
         }
 
         img {
-          width: 100%;
-          object-fit: contain;
+          width: 40rem;
+          height: 100%;
+          object-fit: cover;
           margin-bottom: 1rem;
+
+          @include respond(phone) {
+            width: 100%;
+            height: 50rem;
+          }
+        }
+
+        .info {
+          padding: 4rem;
+
+          @include respond(phone) {
+            padding: 1rem 3rem 3rem;
+          }
         }
       }
     }

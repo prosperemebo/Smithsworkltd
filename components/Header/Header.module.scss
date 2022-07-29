@@ -2,24 +2,41 @@
 @import '../../styles/abstracts/mixins';
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('/assets/hero.png');
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 6rem 8rem 0;
+
+  @include respond(tab-land) {
+    padding: 6rem 4rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 20rem 2rem 6rem;
+    text-align: center;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .textbox {
     // position: absolute;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
+    // text-align: center;
+    width: 50%;
 
     @include respond(tab-port) {
       //   width: 90%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
     }
 
     h1 {
@@ -29,6 +46,26 @@
 
     p {
       margin-bottom: 3.5rem;
+    }
+  }
+
+  img {
+    @include card;
+    width: 45rem;
+    border-radius: 6rem;
+
+    @include respond(tab-land) {
+      width: 35rem;
+      border-radius: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      flex: 1;
+      height: 100%;
+      margin-top: 6rem;
+      object-fit: cover;
+      object-position: top;
     }
   }
 }

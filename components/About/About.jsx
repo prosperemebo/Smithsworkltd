@@ -117,17 +117,23 @@ const About = () => {
         </div>
       </div>
       <div className={classes.personnelContainer}>
-        <h1 className='heading-secondary'>Key Personnel.</h1>
+        <h1 className='heading-secondary u-center-text'>Key Personnel.</h1>
         <div className={classes.personnels}>
           <div className={classes.personnel}>
             <img src='/assets/member-1.jpg' alt='Kayode Ajayi-Smith' />
-            <p className='paragraph'>Chief Executive Officer</p>
-            <h2 className='heading-tertiary big'>Kayode Ajayi-Smith</h2>
-          </div>
-          <div className={classes.personnel}>
-            <img src='/assets/member-2.jpg' alt='Oluwaseun Adebayo' />
-            <p className='paragraph'>Executive Director/Company Secretary</p>
-            <h2 className='heading-tertiary big'>Oluwaseun Adebayo</h2>
+            <div className={classes.info}>
+              <h2 className='heading-tertiary big'>Kayode Ajayi-Smith</h2>
+              <p className='paragraph'>Chief Executive Officer</p>
+              <p className='paragraph'>
+                Through the years, Organizational structure has been defined by
+                Scholars, Executives and Corporate Anthropologists along
+                continuum’s that are intended to represent polarities of
+                behaviour. They cover a wide range of leadership and
+                communication styles, decision-making and every other governing
+                principle illustrated in the organization and reinforced and
+                normalized by the key talent systems and management practices.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link href='/' passHref>
+          <Link href='/projects' passHref>
             <a>Projects</a>
           </Link>
         </li>

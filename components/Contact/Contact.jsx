@@ -6,10 +6,9 @@ const Contact = () => {
     <section className={classes.Contact}>
       <div className={classes.body}>
         <div className={classes.capsule}>
-          <h1 className='heading-primary'>Say hi.</h1>
+          <h1 className='heading-primary'>Reach Out.</h1>
           <p className='paragraph'>
-            Send a message to Smithswork communication team, <br /> we’re
-            excited to kick off your business.
+            You're just a message away from reaching our team!
           </p>
         </div>
         <div className={classes.infoBody}>

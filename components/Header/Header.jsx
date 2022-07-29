@@ -16,7 +16,7 @@ const Header = () => {
         }}
         className={classes.textbox}
       >
-        <h1 className='heading-primary'>
+        <h1 className='heading-secondary'>
           Helping Nigeria Succeed by Promoting Small Businesses.
         </h1>
         <p className='paragraph'>
@@ -25,9 +25,19 @@ const Header = () => {
           integrity.
         </p>
         <Link href='/' passHref>
-          <a className='btn btn-primary'>Get Quote</a>
+          <a className='btn btn-primary'>Contact Us</a>
         </Link>
       </motion.div>
+      <motion.img
+        initial={{ opacity: 0, x: 100 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+          transition: { ...transition },
+        }}
+        src='/assets/hero.jpg'
+        alt='Portrait of a dilligent man.'
+      />
     </header>
   );
 };
