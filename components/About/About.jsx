@@ -92,7 +92,7 @@ const About = () => {
       <div className={classes.values}>
         <div className={classes.value}>
           <img src='/assets/social-care.gif' alt='Vision' />
-          <h2 className='heading-tertiary'>Vision</h2>
+          <h2 className='heading-tertiary big'>Vision</h2>
           <p className='paragraph'>
             To be the model of “helping Nigeria succeed” through our
             contributions to the small business sub-sector.
@@ -100,7 +100,7 @@ const About = () => {
         </div>
         <div className={classes.value}>
           <img src='/assets/rocket.gif' alt='Mission' />
-          <h2 className='heading-tertiary'>Mission</h2>
+          <h2 className='heading-tertiary big'>Mission</h2>
           <p className='paragraph'>
             To unlock the potential of small businesses through the provision of
             exceptional advisory services.
@@ -108,12 +108,95 @@ const About = () => {
         </div>
         <div className={classes.value}>
           <img src='/assets/target.gif' alt='Values' />
-          <h2 className='heading-tertiary'>Values</h2>
+          <h2 className='heading-tertiary big'>Values</h2>
           <p className='paragraph'>
             Our values and culture as a responsible Nigerian company are:
             Diligence, Excellence, Integrity, Respect, Passion, Leadership &
             Professionalism, and Teamwork.
           </p>
+        </div>
+      </div>
+      <div className={classes.personnelContainer}>
+        <h1 className='heading-secondary'>Key Personnel.</h1>
+        <div className={classes.personnels}>
+          <div className={classes.personnel}>
+            <img src='/assets/member-1.jpg' alt='Kayode Ajayi-Smith' />
+            <p className='paragraph'>Chief Executive Officer</p>
+            <h2 className='heading-tertiary big'>Kayode Ajayi-Smith</h2>
+          </div>
+          <div className={classes.personnel}>
+            <img src='/assets/member-2.jpg' alt='Oluwaseun Adebayo' />
+            <p className='paragraph'>Executive Director/Company Secretary</p>
+            <h2 className='heading-tertiary big'>Oluwaseun Adebayo</h2>
+          </div>
+        </div>
+      </div>
+      <div className={classes.features}>
+        <div className={classes.featureRow}>
+          <div className={classes.feature}>
+            <img src='/assets/connection.gif' alt='Community' />
+            <h2 className='heading-tertiary big'>Community</h2>
+            <p className='paragraph'>
+              Through our Innovation Managers Program, Smithswork Limited helps
+              to groom talents for the SME Sub-sector, putting Nigeria’s young
+              unemployed population to work and helping SMEs increase
+              productivity. A portion of our profits goes towards this cause and
+              future causes.
+            </p>
+          </div>
+          <div className={classes.feature}>
+            <img src='/assets/money-bag.gif' alt='Cost' />
+            <h2 className='heading-tertiary big'>Cost</h2>
+            <p className='paragraph'>
+              In every assignment and project we are tasked with, we focus on
+              ensuring cost-effectiveness which helps to drive our client’s cost
+              down.
+            </p>
+          </div>
+          <div className={classes.feature}>
+            <img src='/assets/idea.gif' alt='Innovation' />
+            <h2 className='heading-tertiary big'>Innovation</h2>
+            <p className='paragraph'>
+              At Smithswork, we pride ourselves for taking the initiative to
+              create out-of-the-box solutions to clients’ assignments and
+              projects.
+            </p>
+          </div>
+          <div className={classes.feature}>
+            <img src='/assets/diagram.gif' alt='Sustainability' />
+            <h2 className='heading-tertiary big'>Sustainability</h2>
+            <p className='paragraph'>
+              While we are concerned about profit, we are equally concerned
+              about the continued existence of our environment. In every
+              project, we keep our eyes on sustainability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={classes.affliations}>
+        <h1 className='heading-secondary'>Affliations.</h1>
+        <div className={classes.affiliates}>
+          <div className={classes.affliate}>
+            <img
+              src='/assets/JOINT-INITIATIVE.jpeg'
+              alt='Joint Initiative for Development'
+            />
+          </div>
+          <div className={classes.affliate}>
+            <img src='/assets/INTEGRITY.jpeg' alt='Integrity' />
+          </div>
+          <div className={classes.affliate}>
+            <img src='/assets/NASME.jpeg' alt='NASME' />
+          </div>
+          <div className={classes.affliate}>
+            <img src='/assets/boi.jpeg' alt='Bank of Industry' />
+          </div>
+          <div className={classes.affliate}>
+            <img src='/assets/ZYDEX.jpeg' alt='Zydex' />
+          </div>
+          <div className={classes.affliate}>
+            <img src='/assets/clarion.jpeg' alt='Caliron' />
+          </div>
         </div>
       </div>
     </section>

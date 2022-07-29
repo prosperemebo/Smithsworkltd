@@ -17,7 +17,7 @@ const Header = () => {
         className={classes.textbox}
       >
         <h1 className='heading-primary'>
-          Helping Nigeria Succed by Promoting Small Businesses.
+          Helping Nigeria Succeed by Promoting Small Businesses.
         </h1>
         <p className='paragraph'>
           Born out of the work-of-art of a fine craftsman whose work delivers
