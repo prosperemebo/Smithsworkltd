@@ -8,7 +8,7 @@ const Contact = () => {
         <div className={classes.capsule}>
           <h1 className='heading-primary'>Reach Out.</h1>
           <p className='paragraph'>
-            You're just a message away from reaching our team!
+            You&apos;re just a message away from reaching our team!
           </p>
         </div>
         <div className={classes.infoBody}>
