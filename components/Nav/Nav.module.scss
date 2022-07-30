@@ -5,12 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 8rem;
   position: fixed;
   width: 100vw;
   z-index: 10000;
   transition: 0.5s ease;
   transition-property: background-color, box-shadow, padding;
+  padding: 4rem 8rem;
 
   @include respond(tab-land) {
     padding: 2rem 4rem;
@@ -73,7 +73,7 @@
   .navList {
     display: flex;
     justify-content: space-between;
-    flex: 1;
+    flex: 1.8;
 
     li {
       list-style: none;
@@ -195,7 +195,7 @@
       }
 
       .backdrop {
-        width: 50vw;
+        width: 60vw;
       }
 
       .navBtn {

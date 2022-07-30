@@ -60,6 +60,11 @@ const Nav = () => {
           </Link>
         </li>
         <li>
+          <Link href='/business-functions' passHref={false}>
+            <a>Business Functions</a>
+          </Link>
+        </li>
+        <li>
           <Link href='/projects' passHref>
             <a>Projects</a>
           </Link>

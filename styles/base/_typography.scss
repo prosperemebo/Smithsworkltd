@@ -10,8 +10,9 @@ body {
   font-family: $primary-font;
   font-weight: 700;
   font-size: 7rem;
-  line-height: 132%;
+  line-height: 130%;
   text-transform: capitalize;
+  margin-bottom: 2rem;
   color: $color-secondary;
 
   @include respond(tab-land) {

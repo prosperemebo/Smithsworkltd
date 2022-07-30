@@ -35,7 +35,9 @@ const Dropdown = ({ pre, label, description, children }) => {
             </button>
           )}
         </div>
-        <p className='paragraph'>{description}</p>
+        <p className='paragraph'>{`${description}${
+          children ? (!isOpen ? '...' : '') : ''
+        }`}</p>
       </motion.div>
       {isOpen && (
         <motion.div

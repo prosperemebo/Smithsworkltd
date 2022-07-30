@@ -1,0 +1,43 @@
+@import '../../../styles/abstracts/_mixins';
+@import '../../../styles/abstracts/variables';
+
+.Project {
+  border-top: 2px solid rgba($color-secondary, 0.1);
+  padding: 4rem 8rem;
+
+  @include respond(tab-land) {
+    padding: 5rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 3rem;
+    background-color: transparent;
+  }
+
+  .capsule {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    .info {
+      flex: 1;
+      padding-right: 2rem;
+
+      @include respond(phone) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .image {
+      flex: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

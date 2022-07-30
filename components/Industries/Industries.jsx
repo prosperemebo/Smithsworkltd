@@ -26,7 +26,7 @@ const Industries = () => {
         <Dropdown
           pre='01'
           label='Agriculture'
-          description='Smithswork recognizes the capabilities of the Agriculture industry and its potential to drive economic growth and feed the rising population in the country and indeed the continent...'
+          description='Smithswork recognizes the capabilities of the Agriculture industry and its potential to drive economic growth and feed the rising population in the country and indeed the continent.'
         >
           <p className='paragraph'>
             Thus, our intervention is in supporting yields, restoring our farms,
@@ -57,29 +57,35 @@ const Industries = () => {
             <li>Reduction in the use of chemical fertilizers</li>
           </ul>
           <div className='sizedbox'></div>
-          <Link href='https://www.smithsworkagro.com/' passHref>
-            <a className='btn btn-primary'>Smithsworkagro</a>
-          </Link>
+
+          <a
+            href='https://www.smithsworkagro.com/'
+            target='_blank'
+            className='btn btn-primary'
+            rel='noreferrer'
+          >
+            Smithsworkagro
+          </a>
         </Dropdown>
         <Dropdown
           pre='02'
           label='Health Care'
-          description='At Smithswork, we are interested in helping local health institutions and companies develop strategies to identify key areas of impact and increase their influence within their local communities...'
+          description='At Smithswork, we are interested in helping local health institutions and companies develop strategies to identify key areas of impact and increase their influence within their local communities.'
         />
         <Dropdown
           pre='03'
           label='Information Technology'
-          description='Smithswork in collaboration with technology experts, develop solutions for the benefit of small and medium-sized enterprises....'
+          description='Smithswork in collaboration with technology experts, develop solutions for the benefit of small and medium-sized enterprises.'
         />
         <Dropdown
           pre='04'
           label='Energy'
-          description='Smithswork helps small scale energy providers develop strategies in increasing their reach especially amongst small and medium-sized enterprises...'
+          description='Smithswork helps small scale energy providers develop strategies in increasing their reach especially amongst small and medium-sized enterprises.'
         />
         <Dropdown
           pre='05'
           label='Manufacturing'
-          description='Smithswork helps small scale manufacturers identify strategies to improve processes, access funding options, and increase productivity...'
+          description='Smithswork helps small scale manufacturers identify strategies to improve processes, access funding options, and increase productivity.'
         />
       </motion.div>
     </section>
