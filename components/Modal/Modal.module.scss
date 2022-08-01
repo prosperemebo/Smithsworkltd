@@ -1,0 +1,16 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.Modal {
+  @include card;
+  border-radius: 3rem;
+  position: fixed;
+  padding: 3rem;
+  z-index: 99999;
+  border: 2px solid $color-grey-2;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 5%;
+  background-color: $color-primary;
+  width: 90%;
+}

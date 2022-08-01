@@ -125,13 +125,13 @@ const About = () => {
               <h2 className='heading-tertiary big'>Kayode Ajayi-Smith</h2>
               <p className='paragraph'>Chief Executive Officer</p>
               <p className='paragraph'>
-                Through the years, Organizational structure has been defined by
-                Scholars, Executives and Corporate Anthropologists along
-                continuum’s that are intended to represent polarities of
-                behaviour. They cover a wide range of leadership and
-                communication styles, decision-making and every other governing
-                principle illustrated in the organization and reinforced and
-                normalized by the key talent systems and management practices.
+                Kayode Ajayi-Smith holds a Bachelor’s degree from the Olabisi
+                Onabanjo University, Ogun State, Nigeria and a graduate degree
+                (MBA) from Lehigh University, Bethlehem, Pennsylvania, USA.
+                ‘Kayode is an award-winning Social Entrepreneur with over a
+                decade of experience working in the public, private and third
+                sectors. He is the chief promoter of the current growth
+                initiatives and diversification of the company.
               </p>
             </div>
           </div>
