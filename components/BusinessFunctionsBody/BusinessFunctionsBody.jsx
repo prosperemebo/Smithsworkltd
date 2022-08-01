@@ -5,11 +5,11 @@ const BusinessFunctionsBody = () => {
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
   const variants = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: 120 },
     visible: (custom) => ({
       opacity: 1,
       y: 0,
-      transition: { ...transition, delay: custom * 0.1 },
+      transition: { ...transition, delay: custom * 0.2 },
     }),
   };
 
@@ -30,36 +30,56 @@ const BusinessFunctionsBody = () => {
         </motion.div>
         <div className={classes.features}>
           <div className={classes.featureRow}>
-            <div className={classes.feature}>
+            <motion.div
+              custom={0}
+              animate={'visible'}
+              initial={'hidden'}
+              variants={variants}
+              className={classes.feature}
+            >
               <img src='/assets/presentation.gif' alt='Project Support' />
               <h2 className='heading-tertiary big'>Project Support</h2>
               <p className='paragraph'>
-                Through our Innovation Managers Program, Smithswork Limited
-                helps to groom talents for the SME Sub-sector, putting Nigeria’s
-                young unemployed population to work and helping SMEs increase
-                productivity. A portion of our profits goes towards this cause
-                and future causes.
+                We understand the frustration businesses go through while
+                handling projects, we are keen at making you projects sour new
+                growth and make the blurry path clearer.
               </p>
-            </div>
-            <div className={classes.feature}>
+            </motion.div>
+            <motion.div
+              custom={1}
+              animate={'visible'}
+              initial={'hidden'}
+              variants={variants}
+              className={classes.feature}
+            >
               <img src='/assets/money-bag.gif' alt='Financial Advisory' />
               <h2 className='heading-tertiary big'>Financial Advisory</h2>
               <p className='paragraph'>
-                In every assignment and project we are tasked with, we focus on
-                ensuring cost-effectiveness which helps to drive our client’s
-                cost down.
+                Our finance practice focuses on helping small businesses manage
+                their finances, cut cost and access innovative funding.
               </p>
-            </div>
-            <div className={classes.feature}>
+            </motion.div>
+            <motion.div
+              custom={2}
+              animate={'visible'}
+              initial={'hidden'}
+              variants={variants}
+              className={classes.feature}
+            >
               <img src='/assets/connection.gif' alt='Business Advisory' />
               <h2 className='heading-tertiary big'>Business Advisory</h2>
               <p className='paragraph'>
-                At Smithswork, we pride ourselves for taking the initiative to
-                create out-of-the-box solutions to clients’ assignments and
-                projects.
+                We understand the frustration businesses go through when growth
+                Retards and new growth paths seem blurry.
               </p>
-            </div>
-            <div className={classes.feature}>
+            </motion.div>
+            <motion.div
+              custom={3}
+              animate={'visible'}
+              initial={'hidden'}
+              variants={variants}
+              className={classes.feature}
+            >
               <img
                 src='/assets/line-chart.gif'
                 alt='CSR / Non-Profit Advisory'
@@ -68,11 +88,11 @@ const BusinessFunctionsBody = () => {
                 CSR / Non-Profit Advisory
               </h2>
               <p className='paragraph'>
-                While we are concerned about profit, we are equally concerned
-                about the continued existence of our environment. In every
-                project, we keep our eyes on sustainability.
+                Leveraging over 10 years’ experience of Non-profit practice,
+                Smithswork Limited helps businesses to identify key impacts and
+                dividends of doing good while succeeding in business.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -71,17 +71,48 @@ const Industries = () => {
           pre='02'
           label='Health Care'
           description='At Smithswork, we are interested in helping local health institutions and companies develop strategies to identify key areas of impact and increase their influence within their local communities.'
-        />
+        >
+          <p className='paragraph'>
+            Through partnerships, we help local health institutions and
+            companies raise funds and work with small businesses within their
+            communities to improve the health of their employees and that of
+            their immediate communities.
+          </p>
+          <p className='paragraph'>
+            We also help local health institutions drive the communication and
+            awareness of healthy behaviors and practices within their local
+            communities.
+          </p>
+        </Dropdown>
         <Dropdown
           pre='03'
           label='Information Technology'
           description='Smithswork in collaboration with technology experts, develop solutions for the benefit of small and medium-sized enterprises.'
-        />
+        >
+          <p className='paragraph'>
+            These solutions are designed to help small businesses improve
+            effectiveness, increase productivity and enhance their growth.
+            <br />
+            Our emphasis on driving data awareness amongst small businesses is
+            at the core of our goal as we believe that data plays a huge role in
+            the growth of any business.
+          </p>
+        </Dropdown>
         <Dropdown
           pre='04'
           label='Energy'
           description='Smithswork helps small scale energy providers develop strategies in increasing their reach especially amongst small and medium-sized enterprises.'
-        />
+        >
+          <p className='paragraph'>
+            We are particularly interested in solar options as an alternative to
+            the erratic supply from the national grid and the impact solar
+            options will have on cost, sustainability and effectiveness of small
+            businesses.
+            <br />
+            Working with small scale energy providers, we will help small
+            businesses identify the best option for their business.
+          </p>
+        </Dropdown>
         <Dropdown
           pre='05'
           label='Manufacturing'

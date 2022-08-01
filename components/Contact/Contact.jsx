@@ -33,11 +33,13 @@ const Contact = () => {
         </div>
       </div>
       <div className={classes.cta}>
-        <form>
-          <input type='text' placeholder='Name' />
-          <input type='email' placeholder='Email' />
-          <textarea placeholder='Message'></textarea>
-          <button className='btn btn-primary'>Submit</button>
+        <form method='POST' action='/mail/message.php'>
+          <input required type='text' placeholder='Name' name='name' />
+          <input required type='email' placeholder='Email' email='email' />
+          <textarea required placeholder='Message' message='message'></textarea>
+          <button name='submit' className='btn btn-primary'>
+            Submit
+          </button>
         </form>
       </div>
     </section>

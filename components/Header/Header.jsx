@@ -24,7 +24,7 @@ const Header = () => {
           the finest solutions from an excellent and diligent mind driven by
           integrity.
         </p>
-        <Link href='/' passHref>
+        <Link href='/contact' passHref>
           <a className='btn btn-primary'>Contact Us</a>
         </Link>
       </motion.div>

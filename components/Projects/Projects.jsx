@@ -31,6 +31,13 @@ const Projects = () => {
           purpose and values and how best to position it in the market it
           satisfies.
         </p>
+        <p className='paragraph'>
+          In conjunction with Smithswork Limited, Clarion group is providing
+          free access to the Secret Seven survey in Nigeria. For more
+          information on the Secret 7, or if you’d like to receive a unique
+          survey which is useful for your company for free, Click Here and
+          complete the form.
+        </p>
       </Project>
       <Project
         label='02. Smithswork Enterprise Center'
