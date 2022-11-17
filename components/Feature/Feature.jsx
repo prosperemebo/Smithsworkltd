@@ -30,22 +30,33 @@ const Feature = () => {
           <div className={classes.overlay}></div>
         </div>
         <div className={classes.features}>
-          <div className={classes.feature}>
-            <img src='/assets/presentation.gif' alt='Project Support' />
-            <h2 className='heading-tertiary'>Project Support</h2>
-          </div>
-          <div className={classes.feature}>
-            <img src='/assets/money-bag.gif' alt='Financial Advisory' />
-            <h2 className='heading-tertiary'>Financial Advisory</h2>
-          </div>
-          <div className={classes.feature}>
-            <img src='/assets/connection.gif' alt='Business Advisory' />
-            <h2 className='heading-tertiary'>Business Advisory</h2>
-          </div>
-          <div className={classes.feature}>
-            <img src='/assets/line-chart.gif' alt='CSR / Non-Profit Advisory' />
-            <h2 className='heading-tertiary'>CSR / Non-Profit Advisory</h2>
-          </div>
+          <Link href='/business-functions' passHref={false}>
+            <div className={classes.feature}>
+              <img src='/assets/presentation.gif' alt='Project Support' />
+              <h2 className='heading-tertiary'>Project Support</h2>
+            </div>
+          </Link>
+          <Link href='/business-functions' passHref={false}>
+            <div className={classes.feature}>
+              <img src='/assets/money-bag.gif' alt='Financial Advisory' />
+              <h2 className='heading-tertiary'>Financial Advisory</h2>
+            </div>
+          </Link>
+          <Link href='/business-functions' passHref={false}>
+            <div className={classes.feature}>
+              <img src='/assets/connection.gif' alt='Business Advisory' />
+              <h2 className='heading-tertiary'>Business Advisory</h2>
+            </div>
+          </Link>
+          <Link href='/business-functions' passHref={false}>
+            <div className={classes.feature}>
+              <img
+                src='/assets/line-chart.gif'
+                alt='CSR / Non-Profit Advisory'
+              />
+              <h2 className='heading-tertiary'>CSR / Non-Profit Advisory</h2>
+            </div>
+          </Link>
         </div>
         <Marquee />
       </section>
