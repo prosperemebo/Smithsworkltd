@@ -3,16 +3,16 @@
 
 .header {
   min-height: 100vh;
-  background-image: url('/assets/hero.png');
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15rem 8rem 6rem;
+  margin-bottom: 10rem;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 8rem 0;
 
   @include respond(tab-land) {
-    padding: 15rem 4rem 6rem;
+    padding: 6rem 4rem 0;
   }
 
   @include respond(phone) {
@@ -30,13 +30,18 @@
     // transform: translate(-50%, -50%);
     // text-align: center;
     width: 50%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 
     @include respond(tab-port) {
-      //   width: 90%;
+      margin-top: 0;
+      width: 70%;
     }
 
     @include respond(phone) {
       width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
@@ -49,23 +54,17 @@
     }
   }
 
-  img {
+  .coverImg {
     @include card;
-    width: 45rem;
     border-radius: 6rem;
+    overflow: hidden;
+    height: 30rem;
+    width: 100%;
 
-    @include respond(tab-land) {
-      width: 35rem;
-      border-radius: 4rem;
-    }
-
-    @include respond(phone) {
-      width: 90%;
-      flex: 1;
+    img {
+      width: 100%;
       height: 100%;
-      margin-top: 6rem;
       object-fit: cover;
-      object-position: top;
     }
   }
 }

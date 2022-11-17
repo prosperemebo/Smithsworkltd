@@ -1,0 +1,11 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Input {
+  @include input;
+  flex: 1;
+
+  &.error {
+    border-color: $color-red;
+  }
+}

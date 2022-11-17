@@ -12,6 +12,10 @@
     //Change for the <button> element
     border: none;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &-primary {
@@ -22,6 +26,28 @@
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 30px rgba($color-accent, 0.3);
+    }
+  }
+
+  &-text {
+    display: inline;
+    color: $color-accent;
+    padding: 1rem 1rem 0.1rem !important;
+    border-radius: 0px !important;
+    text-transform: capitalize !important;
+    transition: border 0.2s ease;
+    border-bottom: 1.5px solid transparent;
+
+    &:hover {
+      border-bottom: 1.5px solid $color-accent;
+    }
+  }
+
+  &.tall {
+    padding: 1.8rem 8rem;
+
+    @include respond(phone) {
+      padding: 1.5rem 8rem;
     }
   }
 }

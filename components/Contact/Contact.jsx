@@ -1,11 +1,32 @@
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { useEffect, useRef, useState } from 'react';
 import Portal from '../HOC/Portal';
 import Modal from '../Modal/Modal';
 import classes from './Contact.module.scss';
 
 const Contact = () => {
   const [msgStatus, setMsgStatus] = useState(null);
+  const [formError, setFormError] = useState({ status: false, message: '' });
+  const [isFormVerified, setIsFormVerified] = useState(false);
+  const recaptchaRef = useRef();
+  const formRef = useRef();
+
+  const onRecaptchaChange = (value) => {
+    // console.log('Captcha value:', value);
+    setIsFormVerified(true);
+  };
+
+  // const formSubmitHandler = (event) => {
+  //   event.preventDefault();
+
+  //   if (recaptchaRef.current.getValue() === '' && !isFormVerified) {
+  //     setFormError({ status: true, message: 'Please Validate Recaptcha!' });
+  //     setMsgStatus(true);
+  //   } else {
+  //     console.log(formRef.current.submit);
+  //     formRef?.current.dispatchEvent(new Event('submit'));
+  //   }
+  // };
 
   useEffect(() => {
     const urlString = window.location.href;
@@ -34,6 +55,9 @@ const Contact = () => {
               {msgStatus === 'success' &&
                 "Message was sent successfully! We'll get back to you soon."}
             </p>
+            {formError.status && (
+              <p className='paragraph'>{formError.message}</p>
+            )}
           </Modal>
         )}
       </Portal>
@@ -72,13 +96,25 @@ const Contact = () => {
           <form
             method='POST'
             action='https://smithsworkltd.com/mail/message.php'
+            ref={formRef}
+            // onSubmit={formSubmitHandler}
           >
             <input required type='text' placeholder='Name' name='name' />
             <input required type='email' placeholder='Email' email='email' />
             <textarea required placeholder='Message' name='message'></textarea>
-            <button name='submit' className='btn btn-primary'>
-              Submit
-            </button>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey='6Lc6c38hAAAAAHiXqkDJKTQfOMMFDkUwSJdCNPHI'
+              onChange={onRecaptchaChange}
+            />
+            <div className='sizedbox'></div>
+            <div className='sizedbox'></div>
+            <div className='sizedbox'></div>
+            {isFormVerified && (
+              <button name='submit' className='btn btn-primary'>
+                Submit
+              </button>
+            )}
           </form>
         </div>
       </section>

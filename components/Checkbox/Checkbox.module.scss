@@ -1,0 +1,30 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Checkbox {
+  @include card;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.007);
+  }
+
+  .icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    border: 3px solid $color-accent;
+    margin-right: 1.5rem;
+    transition: background-color 0.2s ease;
+    padding: 0.2rem;
+
+    &.checked {
+      background-color: $color-accent;
+    }
+  }
+}

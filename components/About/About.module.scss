@@ -366,3 +366,46 @@
     }
   }
 }
+
+.affliations {
+  width: calc(100vw - 20rem);
+  margin: 15rem auto 5rem;
+  text-align: center;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .affiliates {
+    @include card;
+    margin-top: 5rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 20rem;
+    }
+
+    .affliate {
+      padding: 0 1.5rem;
+      flex: 1;
+
+      @include respond(tab-port) {
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

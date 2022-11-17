@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Dropdown from '../Dropdown/Dropdown';
 import classes from './Industries.module.scss';
@@ -18,8 +17,8 @@ const Industries = () => {
     <section className={classes.Industries} id='industry' ref={container}>
       <h2 className='heading-secondary u-center-text'>Industries.</h2>
       <motion.div
-        layoutScroll
-        style={{ overflow: 'scroll' }}
+        // layoutScroll
+        // style={{ overflow: 'scroll' }}
         transition={{ duration: 1, type: 'spring' }}
         className={classes.sections}
       >

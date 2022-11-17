@@ -83,10 +83,9 @@ const About = () => {
       </div>
       <div className={classes.about}>
         <p className='paragraph'>
-          “Born out of the work-of-art of a fine craftsman whose work delivers
+          Born out of the work-of-art of a fine craftsman whose work delivers
           the finest solutions from an excellent and diligent mind driven by
-          integrity. We are in the knowledge and solution creation business. We
-          exist to unlock the potentials of small businesses “
+          integrity. This is why we are in the knowledge and creation business.
         </p>
       </div>
       <div className={classes.values}>

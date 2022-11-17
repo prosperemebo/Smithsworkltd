@@ -1,0 +1,126 @@
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+
+.Signup {
+  overflow-x: hidden;
+
+  .services {
+    min-height: 100vh;
+    margin-bottom: 3rem;
+    padding: 6rem 8rem 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 15rem;
+
+    @include respond(tab-land) {
+      padding: 6rem 4rem 0;
+      padding-top: 15rem;
+    }
+
+    @include respond(phone) {
+      padding: 20rem 2rem 6rem;
+      padding-top: 15rem;
+    }
+  }
+
+  .checkboxes {
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  form {
+    display: flex;
+    width: 60%;
+
+    &.detailForm {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    input {
+      @include input;
+      flex: 1;
+    }
+
+    button {
+      height: 5rem;
+      width: 5rem;
+      padding: 1rem;
+      margin-left: 1.5rem;
+      border-radius: 50%;
+      background-color: $color-accent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .Success {
+    min-height: 100vh;
+    margin-bottom: 3rem;
+    padding: 6rem 8rem 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 25rem;
+
+    @include respond(tab-land) {
+      padding: 6rem 4rem 0;
+      padding-top: 20rem;
+    }
+
+    @include respond(phone) {
+      padding: 20rem 2rem 6rem;
+      padding-top: 20rem;
+    }
+
+    .featureCard {
+      @include card;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem;
+      margin: 0 auto;
+
+      img {
+        width: 10rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .content {
+      h2 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.LoadingOverlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}

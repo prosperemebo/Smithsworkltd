@@ -4,13 +4,15 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <meta charset='UTF-8' />
+        <meta charSet='UTF-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <title>Smithsworkltd - Diligence / Excellence / Integrity</title>
         <link rel='icon' href='/favicon.png' type='image/png' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
+        />
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap'
           rel='stylesheet'

@@ -41,8 +41,19 @@ const BusinessFunctionsBody = () => {
               <h2 className='heading-tertiary big'>Project Support</h2>
               <p className='paragraph'>
                 We understand the frustration businesses go through while
-                handling projects, we are keen at making you projects sour new
-                growth and make the blurry path clearer.
+                handling projects, hence we were keen on making your projects
+                succeed seamlessly at minimal costs. Find out more about how we
+                help bring your projects to fruition. Our project management
+                specialists are available for a 15 minutes consultation with
+                your team.
+                <a
+                  href='https://calendly.com/smithsworkltd/free_consultation'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='btn btn-text'
+                >
+                  Click here to schedule.
+                </a>
               </p>
             </motion.div>
             <motion.div
@@ -56,7 +67,16 @@ const BusinessFunctionsBody = () => {
               <h2 className='heading-tertiary big'>Financial Advisory</h2>
               <p className='paragraph'>
                 Our finance practice focuses on helping small businesses manage
-                their finances, cut cost and access innovative funding.
+                their finances, cut costs and access innovative funding. To
+                learn more about our phenomenal practices.
+                <a
+                  href='https://calendly.com/smithsworkltd/free_consultation'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='btn btn-text'
+                >
+                  Schedule a meeting with our team.
+                </a>
               </p>
             </motion.div>
             <motion.div
@@ -70,7 +90,18 @@ const BusinessFunctionsBody = () => {
               <h2 className='heading-tertiary big'>Business Advisory</h2>
               <p className='paragraph'>
                 We understand the frustration businesses go through when growth
-                Retards and new growth paths seem blurry.
+                retards and new growth paths seem blurry. At Smithswork, we help
+                to identify growth opportunities and leverage innovations to
+                create product and service extensions. To find out more, please
+                reach out to
+                <a
+                  href='mailto:info@smithsworkltd.com'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='btn btn-text'
+                >
+                  info@smithsworkltd.com
+                </a>
               </p>
             </motion.div>
             <motion.div
@@ -88,9 +119,18 @@ const BusinessFunctionsBody = () => {
                 CSR / Non-Profit Advisory
               </h2>
               <p className='paragraph'>
-                Leveraging over 10 years’ experience of Non-profit practice,
-                Smithswork Limited helps businesses to identify key impacts and
-                dividends of doing good while succeeding in business.
+                Leveraging over 10 years of experience in Non-profit practice,
+                Smithswork Limited helps businesses and non-profit organisations
+                to identify key impacts and dividends of doing good while
+                succeeding in business.
+                <a
+                  href='https://calendly.com/smithsworkltd/free_consultation'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='btn btn-text'
+                >
+                  Schedule a free consultation.
+                </a>
               </p>
             </motion.div>
           </div>

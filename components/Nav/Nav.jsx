@@ -54,11 +54,11 @@ const Nav = () => {
             <a>About</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href='/#industry' passHref replace scroll={false}>
             <a>Industry</a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href='/business-functions' passHref={false}>
             <a>Business Functions</a>
@@ -72,6 +72,13 @@ const Nav = () => {
         <li>
           <Link href='/contact' passHref>
             <a>Contact</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='/entreprise' passHref>
+            <a className={'btn btn-primary ' + classes.btn}>
+              Smithswork Entreprise
+            </a>
           </Link>
         </li>
       </ul>

@@ -16,7 +16,7 @@
     padding: 2rem 4rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 2rem;
     padding: 0;
     background-color: transparent;
@@ -31,7 +31,7 @@
       padding: 1rem 2rem;
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       padding: 0;
       background-color: transparent;
       box-shadow: none;
@@ -73,30 +73,38 @@
   .navList {
     display: flex;
     justify-content: space-between;
-    flex: 1.8;
+    align-items: center;
+    flex: 2.5;
 
     li {
       list-style: none;
 
       a {
-        text-decoration: none;
-        color: $color-secondary;
-        font-size: 1.8rem;
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        transition: background-color 0.2s ease, border 0.2s ease;
-        border-radius: 5px;
-        border: 1px solid transparent;
+        &:not(.btn) {
+          text-decoration: none;
+          color: $color-secondary;
+          font-size: 1.8rem;
+          font-weight: 600;
+          padding: 0.5rem 1rem;
+          transition: background-color 0.2s ease, border 0.2s ease;
+          border-radius: 5px;
+          border: 1px solid transparent;
 
-        &:hover {
-          background-color: rgba($color-accent, 0.1);
-          border-color: $color-grey-2;
+          &:hover {
+            background-color: rgba($color-accent, 0.1);
+            border-color: $color-grey-2;
+          }
+        }
+
+        &.btn {
+          font-size: 1.8rem;
+          padding: 0.5rem 1rem;
         }
       }
     }
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     &.navScrolled,
     &.navOpen {
       .logo {
